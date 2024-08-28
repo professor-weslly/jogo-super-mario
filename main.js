@@ -26,7 +26,7 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
     mario.style.marginLeft = "50px";
 
     clearInterval(loop);
-    
+  }    
 },10);
 
 document.addEventListener("keydown", jump);
