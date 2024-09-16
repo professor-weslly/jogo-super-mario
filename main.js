@@ -1,5 +1,6 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
+const nuvem = document.querySelector(".nuvem");
 const startButton = document.querySelector(".start");
 const gameOverScreen = document.querySelector(".game-over");
 
@@ -46,8 +47,12 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
     mario.src = "./img/game-over.png";
     mario.style.width = "75px";
     mario.style.marginLeft = "50px";
+    audioStart.pause();
+
+    gameOverSound.play();
 
     clearInterval(loop);
+    gameOverScreen.style.display = "flex";
   }    
 },10);
 
