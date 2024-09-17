@@ -18,7 +18,7 @@ const startGame = () => {
   startButton.style.display = "none";
   mario.style.opacity = "1";
   pipe.style.opacity = "1";
-  clouds.style.opacity = "1";
+  nuvem.style.opacity = "1";
 
 }
 
